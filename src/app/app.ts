@@ -1,12 +1,18 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UserCard } from './user-card/user-card';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,UserCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('My-Demo-Application');
+
+   shweta = "1234";
+
+
+
 }
