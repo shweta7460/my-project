@@ -234,9 +234,28 @@
     
       <p>Congratulations! Your app is running. 🎉</p>
       
-      <app-user-card [username]="'Shweta'" [userrole]="'developer'"></app-user-card>
-      <app-user-card [username]="'ABC'" [useremail]="'ss.com'" [userrole]="'developer'"></app-user-card>
-    </div>
+    <app-user-card [username]="'Shweta'"  [userrole]="'developer'"></app-user-card>
+    <app-user-card [username]="'ABC'" [useremail]="'ss.com'" [userrole]="'developer'"></app-user-card>-->
+    <app-card>
+      <h3>This is card content</h3>
+      <p>
+  This is demo for ng-content
+      </p>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul> 
+    </app-card>
+    <h1 style="text-align: center;">Component Lifecycle Demo</h1>
+ 
+<div style="text-align: center; margin: 20px;">
+  <button (click)="changeMessage()">Change Message</button>
+  <button (click)="toggleLogger()">Toggle Logger Component</button>
+</div>
+ 
+<app-logger *ngIf="showLoggerComponent" [message]="messageFromParent"></app-logger>
+  </div>
 
 
     
