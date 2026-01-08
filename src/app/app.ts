@@ -7,11 +7,14 @@ import { CommonModule } from '@angular/common';
 import { Child } from './child/child';
 import { Parent } from './parent/parent';
 import { FocusInput } from './focus-input/focus-input';
+import { QueryOptionsParent } from "./query-options-parent/query-options-parent";
+import { QueryOptionsChild } from './query-options-child/query-options-child';
+import { QueryOptionsNestedchild } from './query-options-nestedchild/query-options-nestedchild';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,UserCard,Card,Logger,CommonModule,Child,Parent,FocusInput],
+  imports: [RouterOutlet, UserCard, Card, Logger, CommonModule, Child, Parent, FocusInput, QueryOptionsParent,QueryOptionsChild,QueryOptionsNestedchild],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

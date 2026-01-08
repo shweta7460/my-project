@@ -1,0 +1,13 @@
+<div style="border: 2px solid purple; padding:15px; margin: 20px;">
+    <h2>Parent Component with Advance Queries</h2>
+    <div #inputWrapper>
+        <h3>View Query(Using template variable and read)</h3>
+        <p>Wrapper element reference variable,{{inputWrapperRef()}}</p>
+    </div>
+    <button (click)="logInputWrapper()">LogElementRef</button>
+    <hr>
+    <h3>Content Query with Descendents</h3>
+    <p>Number of children found: {{allChildrenCount()}}</p>
+    <ng-content></ng-content>
+</div>
+

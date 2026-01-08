@@ -257,7 +257,11 @@
 <app-logger *ngIf="showLoggerComponent" [message]="messageFromParent"></app-logger>
   </div>-->
   <!-- <app-parent></app-parent> -->
-   <app-focus-input></app-focus-input>
+   <!-- <app-focus-input></app-focus-input> -->
+    <app-query-options-parent>
+      <app-query-options-child></app-query-options-child>
+      <app-query-options-nestedchild></app-query-options-nestedchild>
+    </app-query-options-parent>
 
 
     
